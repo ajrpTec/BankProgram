@@ -1,8 +1,9 @@
 //Opgave 1. Skriv kommentarer i programmet, der forklarer hvad programmet gør!
-//Opgave 2. Lav kontoen om til et objekt
-//Opgave 3. Opret flere konto objekter
-//Opgave 4. Opret flere knap objekter
-//Opgave 5. Forbind knapperne med hver konto , så du kan indsætte på de forskellige konti
+//Opgave 2. Giv knappen og tekstfeltet et "bedre" visuelt udtryk
+//Opgave 3. Lav kontoen om til et objekt
+//Opgave 4. Opret flere konto objekter
+//Opgave 5. Opret flere knap objekter
+//Opgave 6. Forbind knapperne med hver konto , så du kan indsætte på de forskellige konti
 //Udfordring 6. Prøv at udtænk en måde at visualisere konto bevægelser
 //Udfordring 7. Prøv at udtænke en måde at give din konto en rente
 
