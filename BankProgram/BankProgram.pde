@@ -7,29 +7,30 @@
 //Udfordring 6. Prøv at udtænk en måde at visualisere konto bevægelser
 //Udfordring 7. Prøv at udtænke en måde at give din konto en rente
 
-Knap       kontoknap1 = new Knap(10,5);
-TekstFelt  tekstFelt = new TekstFelt(10,40);
+Knap       kontoknap1 = new Knap(10, 5);
+TekstFelt  tekstFelt = new TekstFelt(10, 40);
+KontoFelt  kontoFelt     = new KontoFelt();
 
-void setup(){
-  size(1000,500);
+void setup() {
+  size(1000, 500);
   frameRate(60);
 }
 
-void draw(){
+void draw() {
   clear();
   kontoknap1.tegn();
   kontoknap1.registrerKlik();
-  
+
   tekstFelt.tegn(); 
-  
-  if(kontoknap1.erKlikket()){
-    konto1 = konto1 + tekstFelt.hentBelob();
+
+  if (kontoknap1.erKlikket()) {
+    kontoFelt.formue = kontoFelt.formue + tekstFelt.hentBelob();
     tekstFelt.ryd();
   }  
- 
-   udskrivKonto();
+
+  kontoFelt.udskrivKonto();
 }
 
-void keyPressed(){
+void keyPressed() {
   tekstFelt.tilfojTegn();
 }
