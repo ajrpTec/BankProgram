@@ -7,13 +7,13 @@
 //Udfordring 6. Prøv at udtænk en måde at visualisere konto bevægelser
 //Udfordring 7. Prøv at udtænke en måde at give din konto en rente
 
-Knap       kontoknap1 = new Knap(10, 100);
-Knap       kontoknap2 = new Knap(310, 100);
+Knap       kontoknap1 = new Knap(30, 100);
+Knap       kontoknap2 = new Knap(330, 100);
 
-TekstFelt  tekstFelt = new TekstFelt(10, 40);
+TekstFelt  tekstFelt = new TekstFelt(30, 40);
 
-KontoFelt  kontoFelt1     = new KontoFelt(10,150);
-KontoFelt  kontoFelt2     = new KontoFelt(310,150);
+KontoFelt  kontoFelt1     = new KontoFelt(30,150);
+KontoFelt  kontoFelt2     = new KontoFelt(330,150);
 
 void setup() {
   size(1000, 500);

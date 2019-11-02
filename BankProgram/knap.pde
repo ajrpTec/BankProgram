@@ -18,9 +18,9 @@ class Knap {
     if (klikket) {
       fill(100, 100, 0);
     }
-    rect(xPosition, yPosition, breddeKnap, hojdeKnap,5);
+    rect(xPosition, yPosition, breddeKnap, hojdeKnap,10);
     fill(255);
-    text(tekst, xPosition, yPosition+15);
+    text(tekst, xPosition+10, yPosition+18);
   }
 
   void registrerKlik() {
