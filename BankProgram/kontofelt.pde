@@ -10,7 +10,10 @@ class KontoFelt {
   }
 
   void udskrivKonto() {
-    fill(255);
+    fill(200);
+    rect(x,y,250,70);
+    fill(0);
+
     textSize(32);
     text("Konto1", x, y);
     text(formue, x, y + 50);
