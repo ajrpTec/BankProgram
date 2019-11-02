@@ -10,9 +10,10 @@
 Knap       kontoknap1 = new Knap(10, 5);
 Knap       kontoknap2 = new Knap(310, 5);
 
-
 TekstFelt  tekstFelt = new TekstFelt(10, 40);
-KontoFelt  kontoFelt     = new KontoFelt(10,150);
+
+KontoFelt  kontoFelt1     = new KontoFelt(10,150);
+KontoFelt  kontoFelt2     = new KontoFelt(310,150);
 
 void setup() {
   size(1000, 500);
@@ -32,11 +33,19 @@ void draw() {
   tekstFelt.tegn(); 
 
   if (kontoknap1.erKlikket()) {
-    kontoFelt.formue = kontoFelt.formue + tekstFelt.hentBelob();
+    kontoFelt1.formue = kontoFelt1.formue + tekstFelt.hentBelob();
     tekstFelt.ryd();
   }  
 
-  kontoFelt.udskrivKonto();
+  if (kontoknap2.erKlikket()) {
+    kontoFelt2.formue = kontoFelt2.formue + tekstFelt.hentBelob();
+    tekstFelt.ryd();
+  }  
+
+
+  kontoFelt1.udskrivKonto();
+  kontoFelt2.udskrivKonto();
+
 }
 
 void keyPressed() {
