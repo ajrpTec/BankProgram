@@ -1,6 +1,6 @@
 class Knap {
 
-  String tekst    = " Tryk for indsæt beløb på KONTO1";
+  String tekst;
 
   float xPosition = 10, yPosition  = 5;
   float hojdeKnap = 25, breddeKnap = 250;

@@ -15,7 +15,6 @@ class KontoFelt {
     fill(0);
 
     textSize(32);
-    text("Konto1", x, y);
     text(formue + "KR", x, y + 50);
     textSize(12);
   }
