@@ -31,6 +31,7 @@ void draw() {
   kontoknap2.registrerKlik();
 
   tekstFelt.tegn(); 
+  tekstFelt.registrerKlik();
 
   if (kontoknap1.erKlikket()) {
     kontoFelt1.formue = kontoFelt1.formue + tekstFelt.hentBelob();

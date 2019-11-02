@@ -1,6 +1,10 @@
 class TekstFelt {
+  
+  boolean iFokus  = false;
+  
   StringBuffer input = new StringBuffer();
   float x,y;
+  float bredde = 245, hojde = 35;
 
   TekstFelt(float x, float y){
     this.x = x;
@@ -8,20 +12,28 @@ class TekstFelt {
   }
 
   void tegn() {
-    rect(x+5, y, 245, 35);
+    rect(x+5, y, bredde, hojde);
     
     fill(0);
-    if(frameCount%20<12)rect(x+75+ input.length()*8,y+3,10,30);
+    if(frameCount%20<12 && iFokus)rect(x+75+ input.length()*8,y+3,10,hojde -5);
     fill(100);
-    rect(x,y,73,35);
+    rect(x,y,73,hojde);
     fill(0);
     text("TAST BELØB: " +input.toString() + "   KR", x, y + 25);
+  }
+  
+    void registrerKlik() {
+    if (mousePressed && mouseX < x +bredde && mouseX > x && mouseY > y && mouseY < y + hojde) {
+      iFokus = true;
+    }else if(mousePressed && !(mouseX < x +bredde && mouseX > x && mouseY > y && mouseY < y + hojde)){
+      iFokus = false;
+    }
   }
 
   void tilfojTegn() {
     if(key==BACKSPACE && input.length() > 0){
       input.deleteCharAt(input.length()-1);
-    }else{
+    }else if(iFokus){
       input.append(key);
     }
   }
