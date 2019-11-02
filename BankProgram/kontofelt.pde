@@ -9,7 +9,7 @@ class KontoFelt {
     this.y = y;
   }
 
-  void udskrivKonto() {
+  void tegn() {
     fill(200);
     rect(x,y,250,70);
     fill(0);

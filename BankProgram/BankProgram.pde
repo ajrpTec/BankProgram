@@ -44,8 +44,8 @@ void draw() {
   }  
 
 
-  kontoFelt1.udskrivKonto();
-  kontoFelt2.udskrivKonto();
+  kontoFelt1.tegn();
+  kontoFelt2.tegn();
 
 }
 
