@@ -10,7 +10,7 @@ class TekstFelt {
   void tegn() {
     rect(x, y, 250, 35);
     fill(0);
-    text("TAST BELØB: " +input.toString(), x, y + 25);
+    text("TAST BELØB: " +input.toString() + " KR", x, y + 25);
   }
 
   void tilfojTegn() {
