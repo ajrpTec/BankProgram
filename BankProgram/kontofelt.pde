@@ -1,0 +1,19 @@
+class KontoFelt {
+
+  float formue = 0;
+
+  float x=200, y=150;
+
+  KontoFelt(float x, float y){
+    this.x = x;
+    this.y = y;
+  }
+
+  void udskrivKonto() {
+    fill(255);
+    textSize(32);
+    text("Konto1", x, y);
+    text(formue, x, y + 50);
+    textSize(12);
+  }
+}

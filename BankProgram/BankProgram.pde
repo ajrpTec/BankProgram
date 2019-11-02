@@ -9,7 +9,7 @@
 
 Knap       kontoknap1 = new Knap(10, 5);
 TekstFelt  tekstFelt = new TekstFelt(10, 40);
-KontoFelt  kontoFelt     = new KontoFelt();
+KontoFelt  kontoFelt     = new KontoFelt(10,150);
 
 void setup() {
   size(1000, 500);
