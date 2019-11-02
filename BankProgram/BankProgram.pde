@@ -7,8 +7,8 @@
 //Udfordring 6. Prøv at udtænk en måde at visualisere konto bevægelser
 //Udfordring 7. Prøv at udtænke en måde at give din konto en rente
 
-Knap       kontoknap1 = new Knap();
-TekstFelt  tekstFelt = new TekstFelt();
+Knap       kontoknap1 = new Knap(10,5);
+TekstFelt  tekstFelt = new TekstFelt(10,40);
 
 void setup(){
   size(1000,500);

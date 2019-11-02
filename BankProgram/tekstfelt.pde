@@ -1,10 +1,16 @@
 class TekstFelt {
   StringBuffer input = new StringBuffer();
+  float x,y;
+
+  TekstFelt(float x, float y){
+    this.x = x;
+    this.y = y;
+  }
 
   void tegn() {
-    rect(10, 25, 250, 35);
+    rect(x, y, 250, 35);
     fill(0);
-    text("TAST BELØB: " +input.toString(), 10, 50);
+    text("TAST BELØB: " +input.toString(), x, y + 25);
   }
 
   void tilfojTegn() {

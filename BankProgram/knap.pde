@@ -7,13 +7,18 @@ class Knap {
 
   boolean klikket;
 
+  Knap(float x, float y){
+    this.xPosition = x;
+    this.yPosition = y;
+  }
+
 
   void tegn() {
     fill(100, 0, 0);
     if (klikket) {
       fill(100, 100, 0);
     }
-    rect(xPosition, yPosition, breddeKnap, hojdeKnap);
+    rect(xPosition, yPosition, breddeKnap, hojdeKnap,5);
     fill(255);
     text(tekst, xPosition, yPosition+15);
   }
