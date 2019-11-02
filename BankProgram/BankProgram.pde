@@ -8,18 +8,26 @@
 //Udfordring 7. Prøv at udtænke en måde at give din konto en rente
 
 Knap       kontoknap1 = new Knap(10, 5);
+Knap       kontoknap2 = new Knap(310, 5);
+
+
 TekstFelt  tekstFelt = new TekstFelt(10, 40);
 KontoFelt  kontoFelt     = new KontoFelt(10,150);
 
 void setup() {
   size(1000, 500);
   frameRate(60);
+  kontoknap1.tekst = "Tryk for indsæt beløb på KONTO1";
+  kontoknap2.tekst = "Tryk for indsæt beløb på KONTO2";
 }
 
 void draw() {
   clear();
   kontoknap1.tegn();
   kontoknap1.registrerKlik();
+
+  kontoknap2.tegn();
+  kontoknap2.registrerKlik();
 
   tekstFelt.tegn(); 
 
