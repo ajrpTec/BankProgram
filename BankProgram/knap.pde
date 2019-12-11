@@ -1,5 +1,5 @@
 class Knap {
-
+//test1 branch kommentar
   String tekst;
 
   float xPosition = 10, yPosition  = 5;
