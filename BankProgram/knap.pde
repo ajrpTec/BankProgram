@@ -2,7 +2,7 @@ class Knap {
 
   String tekst;
   String detteErMaster;
-  String detteErNedarvingsOpgave;
+  String detteErNedarvingsOpgave222;
   float xPosition = 10, yPosition  = 5;
   float hojdeKnap = 25, breddeKnap = 250;
 
